@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Bud Delight</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1A1717;
+            color: #f5eede;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #1a1717;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .logo h1 {
+            color: #e8cfb0;
+            margin-left: 540px;
+            margin-bottom: 30px;
+            font: 1.5em "canva-sans";
+            letter-spacing: 0.3px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav button {
+            background-color: #4d3a25;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-bar {
+            margin: 40px auto;
+            width: 80%;
+            position: relative;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #4d3a25;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+        .search-bar button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background-color: #4d3a25;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            font-weight: normal;
+            color: #f5eede;
+            text-align: center;
+        }
+        .main-content p {
+            font-size: 18px;
+            color: #c0a784;
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .category {
+            text-align: center;
+        }
+        .category img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #4d3a25;
+            display: block;
+            margin: 0 auto;
+        }
+        .category button {
+            margin-top: 15px;
+            background-color: #4d3a25;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #1a1717;
+            padding: 20px;
+            text-align: center;
+            color: #c0a784;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="../static/upload/logo69420.png" alt="logo">
+            <h1>TASTE BUD DELIGHT</h1>
+        </div>
+        <nav>
+            <button onclick="location.href='/login'">Login</button>
+            <button>Favorites</button>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>&#128269;</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Put yourself forward with our carefully conducted recopies</h1>
+        <p>Discover delicious and nutritious foods with our program</p>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories">
+        <div class="category">
+            <img src="../static/upload/hot-food.jpg" alt="Hot Foods">
+            <button onclick="location.href='/hot'">Hot Foods</button>
+        </div>
+        <div class="category">
+            <img src="../static/upload/cold-food.jpg" alt="Cold Foods">
+            <button onclick="location.href='/cold'">Cold Foods</button>
+        </div>
+        <div class="category">
+            <img src="../static/upload/drinks.jpg" alt="Drinks">
+            <button onclick="location.href='/drinks'">Drinks</button>
+        </div>
+        <div class="category">
+            <img src="../static/upload/dessert.jpg" alt="Desserts">
+            <button onclick="location.href='/dessert'">Desserts</button>
+        </div>
+        <div class="category">
+            <img src="../static/upload/breakfast.jpg" alt="Breakfast">
+            <button onclick="location.href='/breakfast'">Breakfast</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Taste Bud Delight. All Rights Reserved.
+    </footer>
+</body>
+</html>
